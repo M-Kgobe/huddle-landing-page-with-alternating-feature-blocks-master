@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body{
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*Top Section*/
+.top{
+    width: 100%;
+    height: 40%;
+    background-image: url("images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+}
+    /*Logo section*/
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            margin: 2em 5em;
+        }
+        .free{
+            width: 10em;
+            border-radius: 2em;
+            border: none;
+            background-color: white;
+            color: hsl(192, 100%, 9%);
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            transition: 2s ease-in-out;
+        }
+        .free:hover{
+            cursor: pointer;
+            color: hsl(208, 11%, 55%);
+            box-shadow: 2px 2px 10px -5px hsl(208, 11%, 55%);
+        }
+        .free:active{
+            color: hsl(208, 11%, 55%);
+            transition: 2s ease-in-out;
+            transform:  translateY(0.5em);
+        }
+    /*End of logo section
+
+    /*Mockup section*/
+        .mockup-section{
+            display: flex;
+            margin: 2em 5em;
+            gap: 3em;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+            gap: 1em;
+        }
+        h1{
+            color: hsl(192, 100%, 9%);
+            font-weight: 700;
+            max-width: 80%;
+        }
+        .info p{
+            color: hsl(192, 100%, 9%);
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+        .illustration-mockup{
+            width: 60%;
+        }
+        .illustration-mockup img{
+            width: 100%;
+        }
+        .started{
+            background-color: hsl(322, 100%, 66%);
+            color: white;
+            border: none;
+            border-radius: 2em;
+            width: 50%;
+            padding: 1em 0;
+            font-weight: 600;
+            transition: 2s ease-in-out;
+        }
+        .started:hover{
+            cursor: pointer;
+            box-shadow: 2px 2px 10px hsl(322, 100%, 66%);
+            background-color: hsl(322, 92%, 75%);
+        }
+        .started:active{
+            transform: translateY(0.5em);
+            transition: 2s ease-in-out;
+        }
+    /*End of mockup section*/
+/*End of Top Section*/
+
+/*Middle Section*/
+.middle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+}
+    /* child divs*/
+    .box{
+        display: flex;
+        width: 60%;
+        height: 300px;
+        margin: auto;
+        box-shadow: 2px 2px 10px hsl(208, 11%, 55%);
+        margin-top: 3em;
+        border-radius: 2em;
+    }
+    .Flow{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 3em 5em;
+        justify-content: center;
+        gap: 1em;
+        line-height: 1.5em;
+    }
+    h3{
+        color: hsl(192, 100%, 9%);
+        font-weight: 700;
+    }
+    .text p{
+        color: hsl(208, 11%, 55%);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    .illustrations{
+        width: 40%;
+        margin: 3em 5em;
+    }
+    .illustrations img{
+        width: 100%;
+    }
+    .community{
+        margin: auto;
+        margin-top: 3em;
+        box-shadow: 2px 2px 10px hsl(208, 11%, 55%);
+        width: 30%;
+        height: 200px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2em;
+        gap: 2em;
+        position: relative;
+        bottom: -5em;
+        text-align: center;
+    }
+    .started-com{
+        width: 50%;
+        padding: 0.8em 0;
+        border: none;
+        border-radius: 2em;
+        background-color: hsl(322, 100%, 66%);
+        color: white;
+        font-weight: 600;
+        transition: 2s ease-in-out;
+    }
+    .started-com:hover{
+        cursor: pointer;
+        background-color: hsl(322, 100%, 74%);
+        box-shadow: 2px 2px 10px hsl(322, 100%, 66%);
+    }
+    .started-com:active{
+        transition: 2s ease-in-out;
+        transform: translateY(0.8em);
+    }
+    /*End of child divs*/
+/*End of Middle Section*/
+
+/*Bottom Section*/
+.bottom{
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: column;
+    color: hsl(208, 11%, 55%);
+    width: 100%;
+    height: 20%;
+    font-family: 'Open Sans', sans-serif;
+}
+    /*Huddle section*/
+    .huddle{
+        display: flex;
+        margin: 10em 5em 5em 5em;
+        justify-content: space-between;
+    }
+    .contact-details{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+    .icons-reachus{
+        display: flex;
+        gap: 1em;
+        margin-top: 3em;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .reach-us{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .reach-us p{
+        max-width: 70%;
+    }
+    /*End of the huddle section*/
+
+    /*About section*/
+    .about{
+        display: flex;
+        list-style: none;
+        margin-left: -5em;
+        margin-top: 6em;
+        width: 40%;
+        gap: 8em;
+    }
+    .about div{
+        line-height: 3em;
+    }
+    .about li {
+        display: block;
+        position: relative;
+        width: fit-content;
+        transition: 1s ease-in-out;
+        font-weight: 600;
+    }
+    .about li::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        transform: scaleX(0);
+        transition: 1s transform ease-in-out;
+        left: 0;
+        bottom: 15px;
+        height: 1px;
+        background-color: white;
+    }
+    .about li:hover::after {
+        width: 100%;
+        transform: scaleX(1);
+        transform-origin: bottom center;
+        transition: 1s transform ease-in-out;
+    }
+    .about li:hover{
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        color: white;
+        transition: 1s ease-in-out;
+    }
+    /*End of the about section*/
+
+    /*Socials section*/
+    .logo-icons{
+        width: 100px;
+    }
+    .socials{
+        width: 20%;
+        margin: auto;
+    }
+    .social-icons{
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    .social-icons li{
+        width: 100%;
+        padding: 5px 15px;
+    }
+    .social-icons .logo-icons path{
+        fill: white;
+        stroke-width: 10;
+        stroke: white;
+    }
+    .social-icons .logo-icons.facebook path{
+        stroke-dasharray: 2450;
+        stroke-dashoffset: 0;
+    }
+    .social-icons .logo-icons.facebook:hover path{
+        animation: animate-facebook 5s ease-in-out forwards;
+    }
+    @keyframes animate-facebook {
+        0%{
+            stroke-dashoffset: 0;
+        }
+        40%{
+            stroke-dashoffset: 2450;
+        }
+        60%{
+            fill: transparent;
+        }
+        80%{
+            stroke-dashoffset: 4900;
+            fill: transparent
+        }
+        100%{
+            stroke-dashoffset: 4900;
+            fill: hsl(322, 100%, 66%);
+            stroke: hsl(322, 100%, 66%);
+        }
+    }
+    .social-icons .logo-icons.twitter path{
+        stroke-dasharray: 2010;
+        stroke-dashoffset: 0;
+    }
+    .social-icons .logo-icons.twitter:hover path{
+        animation: animate-twitter 5s linear forwards;
+    }
+    @keyframes animate-twitter {
+        0%{
+            stroke-dashoffset: 0;
+        }
+        40%{
+            stroke-dashoffset: 2010;
+        }
+        60%{
+            fill: transparent;
+        }
+        80%{
+            stroke-dashoffset: 4020;
+            fill: transparent
+        }
+        100%{
+            stroke-dashoffset: 4020;
+            fill: hsl(322, 100%, 66%);
+            stroke: hsl(322, 100%, 66%);
+            
+        }
+    }
+    .social-icons .logo-icons.instagram path{
+        stroke-dasharray: 1570;
+        stroke-dashoffset: 0;
+    }
+    .social-icons .logo-icons.instagram:hover path{
+        animation: animate-instagram 5s linear forwards;
+    }
+    @keyframes animate-instagram {
+        0%{
+            stroke-dashoffset: 0;
+        }
+        40%{
+            stroke-dashoffset: 1570;
+        }
+        60%{
+            fill: transparent;
+        }
+        80%{
+            stroke-dashoffset: 3140;
+            fill: transparent
+        }
+        100%{
+            stroke-dashoffset: 3140;
+            fill: hsl(322, 100%, 66%);
+            stroke: hsl(322, 100%, 66%);
+        }
+    }
+    /*End of Socials section*/
+
+    /*Footer section*/
+    footer{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .attribution{
+        display: flex;
+        width: 50%;
+        font-size: 11px;
+        justify-content: flex-end;
+    }
+    .attribution a{
+        color: hsl(228, 45%, 44%);
+    }
+    .copyright{
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        margin-right: 5em;
+    }
+    /*End of footer section*/
+
+/*End of Bottom Section*/
+
+/*Media query*/
+@media screen and (max-width:700px) {
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    .logo{
+        margin: 5%;
+    }
+    .logo img{
+        width: 50%;
+    }
+    .mockup-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 2em;
+    }
+    .info{
+        width: 100%;
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .info p{
+        max-width: 70%;
+    }
+    .illustration-mockup{
+        width: 80%;
+    }
+    .illustration-mockup img{
+        width: 100%;
+    }
+    .middle{
+        margin-top: 5em;
+        gap: 2em;
+    }
+    .community{
+        width: 70%;
+        box-shadow: 2px 2px 10px -5px;
+    }   
+    .box{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        height: fit-content;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .huddle{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        margin-left: 1em;
+    }
+    .about div{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-details{
+        width: 100%;
+        margin: auto;
+    }
+    .icons-reachus{
+        display: flex;
+        width: 100%;
+    }
+    .reach-us{
+        width: 80%;
+        margin-left: 1em;
+    }
+    .reach-us p{
+        max-width: 100%;
+        width: 100%;
+    }
+    .email{margin-top: 2em;}
+    .icons{
+        gap: 4em;
+    }
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
+    .copyright{
+        text-align: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .attribution{
+        justify-content: center;
+    }
+    .socials{
+        margin-top: 2em;
+        width: 70%;
+        min-width: 100%;
+    }
+}
+@media screen and (max-width:1200px) {
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    .logo{
+        margin: 5%;
+    }
+    .logo img{
+        width: 50%;
+    }
+    .mockup-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 2em;
+    }
+    .info{
+        width: 100%;
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .info p{
+        max-width: 70%;
+    }
+    .illustration-mockup{
+        width: 80%;
+    }
+    .illustration-mockup img{
+        width: 100%;
+    }
+    .middle{
+        margin-top: 5em;
+        gap: 2em;
+    }
+    .community{
+        width: 70%;
+        box-shadow: 2px 2px 10px -5px;
+    }   
+    .box{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        height: fit-content;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .huddle{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        margin: 1em;
+    }
+    .about div{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-details{
+        width: 100%;
+        margin: auto;
+    }
+    .icons-reachus{
+        display: flex;
+        width: 100%;
+    }
+    .reach-us{
+        width: 80%;
+        margin-left: 1em;
+    }
+    .reach-us p{
+        max-width: 100%;
+        width: 100%;
+    }
+    .email{margin-top: 2em;}
+    .icons{
+        gap: 4em;
+    }
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
+    .copyright{
+        text-align: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .attribution{
+        justify-content: center;
+    }
+    .socials{
+        margin-top: 2em;
+        width: 40%;
+    }
+    
+}
