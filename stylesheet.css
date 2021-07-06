@@ -238,7 +238,7 @@ html, body{
         width: 40%;
         gap: 8em;
     }
-    .about div{
+    .about ul{
         line-height: 3em;
     }
     .about li {
